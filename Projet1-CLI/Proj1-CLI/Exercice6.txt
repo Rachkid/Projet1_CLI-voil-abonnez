@@ -1,0 +1,49 @@
+Last login: Wed Oct  1 08:39:33 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ mkdir Abdoul-Rachid
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ ls
+Abdoul-Rachid	Library		Pictures	conteneur	grande_soeur
+Desktop		Movies		Public		creations	parent
+Documents	Music		actualites	grand_frere	politique
+Downloads	Oracle		connaissance	grand_parent	projet_scolaire
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ cd Abdoul-Rachid
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ cd ..
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ cd Abdoul-Rachid
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ touch banque.txt sante.txt .mdp
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls
+banque.txt	sante.txt
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls -a
+.		..		.mdp		banque.txt	sante.txt
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ echo "Relevé bancaire janvier." < banque.txt
+Relevé bancaire janvier.
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ cat banque.txt
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ echo "Vaccination complète" < sante.txt
+Vaccination complète
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls -a
+.		..		.mdp		banque.txt	sante.txt
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ mv sante.txt medical.txt
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls
+banque.txt	medical.txt
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ mkdir documents && mv banque.txt medical.txt documents/
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls
+documents
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls documents
+banque.txt	medical.txt
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls -a
+.		..		.mdp		documents
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ mv .mdp
+usage: mv [-f | -i | -n] [-hv] source target
+       mv [-f | -i | -n] [-v] source ... directory
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ rm .mdp
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ ls -a
+.		..		documents
+iMac-de-Abdoul-Rachid:Abdoul-Rachid abdoul-rachid$ 
+
+
+
+
+
+

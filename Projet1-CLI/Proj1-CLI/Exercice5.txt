@@ -1,0 +1,45 @@
+Last login: Wed Oct  1 08:32:34 on ttys000
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ mkdir -p projet_scolaire/{maths,sciences}
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ ls
+Desktop		Movies		Public		creations	parent
+Documents	Music		actualites	grand_frere	politique
+Downloads	Oracle		connaissance	grand_parent	projet_scolaire
+Library		Pictures	conteneur	grande_soeur
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ cd projet_scolaire
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ ls
+maths		sciences
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ cd ..
+iMac-de-Abdoul-Rachid:~ abdoul-rachid$ cd projet_scolaire/maths
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ echo "x^2 + y^2 + z^2" > equations.txt
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ ls
+equations.txt
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ cat equations.txt
+x^2 + y^2 + z^2
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ cd ..
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ cd sciences
+iMac-de-Abdoul-Rachid:sciences abdoul-rachid$ echo "eau + huile= séparation" > experiences.txt
+iMac-de-Abdoul-Rachid:sciences abdoul-rachid$ ls
+experiences.txt
+iMac-de-Abdoul-Rachid:sciences abdoul-rachid$ cat experiences.txt
+eau + huile= séparation
+iMac-de-Abdoul-Rachid:sciences abdoul-rachid$ cd ..
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ cd maths
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ mv equations.txt geometrie.txt
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ ls
+geometrie.txt
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ mv ../sciences/experiences.txt .
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ ls
+experiences.txt	geometrie.txt
+iMac-de-Abdoul-Rachid:maths abdoul-rachid$ cd ..
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ rm sciences
+rm: sciences: is a directory
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ ls
+maths		sciences
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ rm -r sciences
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ ls
+maths
+iMac-de-Abdoul-Rachid:projet_scolaire abdoul-rachid$ 
